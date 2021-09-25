@@ -1,0 +1,202 @@
+body {
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+}
+a { text-decoration: none; }
+
+
+
+/* NAV BAR STYLES */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0 1rem;
+
+  background-color: #fff;
+}
+
+/* Logo styles */
+.logo-container {
+  display: flex;
+  align-content: center;
+}
+
+.logo-img {
+  width: 5.625rem;
+  margin-left: 1rem;
+}
+
+.nav-icon {
+  padding: 8px;
+}
+
+
+/* Search form styles */
+
+.search-form {
+  display: flex;
+
+  margin: 1rem;
+}
+
+.search-input {
+  width: 35.75rem;
+  height: 2.5rem;
+  padding: .5rem;
+
+  border: 1px solid #ccc;
+}
+
+.search-button, .mic-button {
+  height: 2.5rem;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.search-button {
+  border: 1px solid #ccc;
+}
+
+.mic-button {
+  border: none;
+}
+
+.container {
+  width: fit-content;
+}
+
+/* Main nav links styles */
+.nav-links {
+  display: flex;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.main-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 50%;
+}
+
+
+
+/* VIDEO STYLES */
+.grid-two-col {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2,max-content);
+
+  width: 80vw;
+  margin: 4.5rem auto;
+}
+
+/* youtube video styles */
+.video-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  width: 40rem;
+}
+
+.video {
+  width: 40rem;
+  height: 22.5rem;
+}
+
+.video-title {
+  margin: .5rem 0;
+
+  font-size: 1.125rem;
+  color: #030303;
+}
+
+.video-info-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: .5rem 0;
+
+  font-size: .875rem;
+  color: #606060;
+}
+
+.video-actions {
+  display: flex;
+  align-items: center;
+}
+
+.video-action {
+  display: flex;
+  align-items: center;
+  height: 2.25rem;
+  padding: .4rem;
+
+  color: #030303;
+}
+
+.video-description {
+  font-size: .875rem;
+}
+
+.video-owner {
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.video-owner-img {
+  margin-right: 1rem;
+
+  border-radius: 50%;
+}
+
+.video-owner-name {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+/* subcribe button */
+.subscribe {
+  height: 2.25rem;
+  padding: .625rem 1rem;
+
+  font-weight: bold;
+  background-color: #c00;
+  color: white;
+}
+
+.video-description-text {
+  margin-left: 4rem;
+  margin-top: .5rem;
+}
+
+
+/* related videos */
+.related-videos {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+/* comments */
+.comments {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
