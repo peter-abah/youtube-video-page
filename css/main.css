@@ -1,11 +1,16 @@
 body {
   box-sizing: border-box;
+
+  line-height: 1.2rem;
   font-family: Roboto, Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #030303;
 }
 
 * {
   box-sizing: inherit;
 }
+
 a { text-decoration: none; }
 
 
@@ -81,6 +86,7 @@ a { text-decoration: none; }
 /* Main nav links styles */
 .nav-links {
   display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -88,8 +94,8 @@ a { text-decoration: none; }
 }
 
 .main-avatar {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 
   border-radius: 50%;
 }
@@ -102,7 +108,7 @@ a { text-decoration: none; }
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(2,max-content);
 
-  width: 80vw;
+  width: 68.75rem;
   margin: 4.5rem auto;
 }
 
@@ -189,14 +195,132 @@ a { text-decoration: none; }
 }
 
 
+
 /* related videos */
 .related-videos {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
+  margin-left: 2rem;
 }
+
+.related-video {
+  width: 25rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  width: 10.5rem;
+  height: 5.875rem;
+  margin-right: 1rem;
+}
+
+.related-video .wrapper {
+  width: 12.5rem;
+  font-size: .875rem;
+}
+
+.related-video-title {
+  margin-bottom: .2rem;
+
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.related-video span {
+  font-size: .75rem;
+  color: #606060;
+}
+
+.related-video p {
+  display: flex;
+  flex-direction: column;
+  margin-top: .2rem;
+}
+
 
 /* comments */
 .comments {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  width: 40rem;
+}
+
+.comment-form {
+  display: flex;
+  margin: .5rem 0 1rem;
+}
+
+.comment-input {
+  height: 1.5625rem;
+  flex-grow: 1;
+
+  font-size: .875rem;
+  border: none;
+  border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+
+.comment {
+  display: flex;
+  margin: .5rem 0;
+
+  font-size: .875rem;
+}
+
+.comment-user-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+
+  border-radius: 50%;
+}
+
+.comment-actions {
+  margin-top: 1rem;
+  font-size: .75rem;
+}
+
+.comment-actions a {
+  padding-left: .5rem;
+}
+
+.comment-actions .material-icons-outlined {
+  font-size: 16px;
+}
+
+.comment-user {
+  margin-bottom: .4rem;
+  font-size: .8125rem;
+  font-weight: 600;
+}
+
+.comment-user span {
+  font-size: .875rem;
+  font-weight: 400;
+  color: #606060;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 75rem) {
+  .grid-two-col {
+    margin: 4rem 2rem 0;
+  }
+}
+
+@media screen and (max-width: 62.5rem) {
+  .grid-two-col {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+  }
+
+  .related-videos {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .comments {
+    grid-row: 3 / 4;
+  }
 }
