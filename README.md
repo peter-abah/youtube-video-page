@@ -6,4 +6,4 @@ It is part of [The Odin Project's](https://www.theodinproject.com/paths/full-sta
 ) Html and css curriculum.
 
 You can view it live [here
-](link)
+](https://peter-abah.github.io/youtube-video-page/)
